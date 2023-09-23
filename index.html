@@ -26,35 +26,35 @@
         }
 
 /*--------------------------------------- Front ------------------------------*/
-
-h1 {
-    font-size: 28px;
-    margin-top: -10px;
-    margin-bottom: 20px;
-    color: #ecf0f1;
-    border-bottom: 3px solid #07d6ff;
-    padding-bottom: -20px;
-    text-align: center;
-    /* properti animasi */
-    animation-name: slide-in; /* nama animasi */
-    animation-duration: 1s; /* durasi animasi */
-    animation-fill-mode: forwards; /* animasi tetap pada akhir frame */
-}
-
-/* keyframes untuk animasi slide-in */
-@keyframes slide-in {
-    from {
-        width: 0%; /* lebar awal 0% */
-        margin-left: 50%; /* margin kiri awal 50% */
-        margin-right: 50%; /* margin kanan awal 50% */
-    }
-    to {
-        width: 100%; /* lebar akhir 100% */
-        margin-left: 0%; /* margin kiri akhir 0% */
-        margin-right: 0%; /* margin kanan akhir 0% */
-    }
-}
-
+        
+        h1 {
+            font-size: 28px;
+            margin-top: -10px;
+            margin-bottom: 20px;
+            color: #ecf0f1;
+            border-bottom: 3px solid #07d6ff;
+            padding-bottom: -20px;
+            text-align: center;
+            /* properti animasi */
+            animation-name: slide-in; /* nama animasi */
+            animation-duration: 1s; /* durasi animasi */
+            animation-fill-mode: forwards; /* animasi tetap pada akhir frame */
+        }
+        
+        /* keyframes untuk animasi slide-in */
+        @keyframes slide-in {
+            from {
+                width: 0%; /* lebar awal 0% */
+                margin-left: 50%; /* margin kiri awal 50% */
+                margin-right: 50%; /* margin kanan awal 50% */
+            }
+            to {
+                width: 100%; /* lebar akhir 100% */
+                margin-left: 0%; /* margin kiri akhir 0% */
+                margin-right: 0%; /* margin kanan akhir 0% */
+            }
+        }
+        
 
 
 h2 {
@@ -71,6 +71,7 @@ h2 {
 /*--------------------------------------- Table ------------------------------*/
         table {
             width: 50%;
+            margin-left: 20px;
             border-collapse: collapse;
             margin-bottom: 20px;
         }
@@ -108,6 +109,8 @@ h2 {
         .presenter-list {
             list-style-type: none;
             padding-left: 0;
+            margin-left: 20px;
+            margin-right: 20px;
         }
 
         .presenter-list li {
@@ -171,7 +174,7 @@ h2 {
             display: none;
             position: fixed;
             background-color: #ffffff;
-            color: #000000;
+            color: #ff0000;
             padding: 10px;
             border-radius: 5px;
             width: 250px;
@@ -211,10 +214,12 @@ h2 {
 
             
             table {
-            width: 80%;
-            border-collapse: collapse;
-            margin-bottom: 20px;
+                width: 80%;
+                margin-left: 0px;
+                border-collapse: collapse;
+                margin-bottom: 20px;
              }
+
             p, .presenter-list li {
                 font-size: 14px;
             }
@@ -236,6 +241,13 @@ h2 {
             border-radius: 5px; /* Sudut border */
             cursor: pointer;
             font-size: 16px; /* Ukuran font teks */
+        }
+
+        .presenter-list {
+            list-style-type: none;
+            padding-left: 0;
+            margin-left: 0px;
+            margin-right: 0px;
         }
 
     }
