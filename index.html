@@ -6,7 +6,7 @@
   <link rel="website icon"type="jpg"
   href="logo.jpg">
     <title>Rangkaian Listrik 1</title>
-    <style>
+<style>
         body {
             font-family: 'Arial', sans-serif;
             margin: 0;
@@ -25,15 +25,50 @@
             border-radius: 8px;
         }
 
-        h1 {
+/*--------------------------------------- Front ------------------------------*/
+
+h1 {
+    font-size: 28px;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    color: #ecf0f1;
+    border-bottom: 3px solid #07d6ff;
+    padding-bottom: -20px;
+    text-align: center;
+    /* properti animasi */
+    animation-name: slide-in; /* nama animasi */
+    animation-duration: 1s; /* durasi animasi */
+    animation-fill-mode: forwards; /* animasi tetap pada akhir frame */
+}
+
+/* keyframes untuk animasi slide-in */
+@keyframes slide-in {
+    from {
+        width: 0%; /* lebar awal 0% */
+        margin-left: 50%; /* margin kiri awal 50% */
+        margin-right: 50%; /* margin kanan awal 50% */
+    }
+    to {
+        width: 100%; /* lebar akhir 100% */
+        margin-left: 0%; /* margin kiri akhir 0% */
+        margin-right: 0%; /* margin kanan akhir 0% */
+    }
+}
+
+
+
+h2 {
             font-size: 28px;
             margin-bottom: 20px;
             color: #ecf0f1;
-            border-bottom: 3px solid #07daff;
-            padding-bottom: 10px;
+            margin-top: 20px;
+            padding-bottom: -20px;
             text-align: center;
         }
 
+
+
+/*--------------------------------------- Table ------------------------------*/
         table {
             width: 50%;
             border-collapse: collapse;
@@ -59,6 +94,8 @@
             font-size: 16px;
         }
 
+
+/*--------------------------------------- Frame video ------------------------------*/
         iframe {
             display: block;
             max-width: 100%;
@@ -67,6 +104,7 @@
             margin-bottom: 30px;
         }
 
+/*--------------------------------------- List present ------------------------------*/
         .presenter-list {
             list-style-type: none;
             padding-left: 0;
@@ -81,7 +119,7 @@
             font-size: 16px;
         }
 
-
+/*--------------------------------------- Btn youtube ------------------------------*/
         .button-container {
             text-align: center;
             margin-top: -10px;
@@ -90,23 +128,23 @@
 
         .youtube-button {
             display: inline-block;
-            padding: 5px 220px; /* Sesuaikan dengan kebutuhan */
-            margin-top: -25px; /* Atur margin atas */
+            padding: 5px 220px; 
+            margin-top: -25px; 
             margin-bottom: 25px;
-            background-color: #FF0000; /* Warna latar belakang */
-            color: #fff; /* Warna teks */
-            text-decoration: none; /* Menghapus garis bawah default pada tautan */
-            border: none; /* Menghapus border */
-            border-radius: 5px; /* Sudut border */
+            background-color: #FF0000;
+            color: #fff; 
+            text-decoration: none; 
+            border: none; 
+            border-radius: 5px; 
             cursor: pointer;
-            font-size: 18px; /* Ukuran font teks */
+            font-size: 18px; 
         }
 
         .youtube-button:hover {
-            background-color: #CC0000; /* Warna latar belakang saat di-hover */
+            background-color: #CC0000; 
         }
 
-
+/*--------------------------------------- Help icon ------------------------------*/
         .help-icon {
             position: fixed;
             bottom: 10px;
@@ -122,6 +160,8 @@
             cursor: pointer;
         }
 
+/*--------------------------------------- Dropdown content ------------------------------*/
+
         .dropdown-content {
             display: none;
             position: fixed;
@@ -130,15 +170,19 @@
             padding: 10px;
             border-radius: 5px;
             width: 250px;
-            left: 50%; /* Center horizontally */
-            top: 50%; /* Center vertically */
-            transform: translate(-50%, -50%); /* Center the content within the container */
+            left: 50%; 
+            top: 50%; 
+            transform: translate(-50%, -50%); 
             z-index: 1;
         }
 
 
-        
 
+
+
+
+        
+/*--------------------------------------- Responsive mobile ------------------------------*/
         @media (max-width: 600px) {
             .container {
                 margin: 10px;
@@ -148,6 +192,12 @@
             h1 {
                 font-size: 19px;
                 text-align: center;
+            }
+
+            h2 {
+                font-size: 19px;
+                text-align: center;
+                padding-bottom: -20px;
             }
 
             
@@ -185,7 +235,9 @@
 
 <body>
     <div class="container">
-        <h1>Tugas Kelompok Rangkaian Listrik 1</h1>
+        <h2>Tugas Kelompok Rangkaian Listrik 1</h2>
+        <h1></h1>
+    <!----================================================ Table ==================================== -->
         <table>
             <tr>
                 <th style="font-size: 13px;">Matkul</th>
@@ -201,9 +253,11 @@
             </tr>
             <tr>
                 <th style="font-size: 13px;">Tanggal</th>
-                <td style="font-size: 13px;">: 18 September 2023</td>
+                <td style="font-size: 13px;">: 19 September 2023</td>
             </tr>
         </table>
+
+<!----================================================ Frame video ==================================== -->
 
         <iframe width="560" height="315" src="https://www.youtube.com/embed/-_etxLweXwY?si=XlH6StopHG47kPGv" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
         <ul class="presenter-list">
@@ -220,6 +274,8 @@
                 19:50</li>
         </ul>
     </div>
+
+<!----================================================ help icon ==================================== -->
     <div class="help-icon" id="help-icon">?</div>
     <div class="dropdown-content" id="dropdown-content">
         <p3> Jika video tidak dapat diputar, kemungkinan browser Anda tidak mendukungnya. 
@@ -256,3 +312,4 @@
 </body>
 
 </html>
+
